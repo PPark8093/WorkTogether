@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
-import HomePage from './Pages/HomePage'
-import CommunityPage from './Pages/Communitypage'
+import HomePage from './Pages/HomePage.jsx'
+import CommunityPage from './Pages/Communitypage.jsx'
 import './Styles/AllComponents.css'
 
 function App() {
