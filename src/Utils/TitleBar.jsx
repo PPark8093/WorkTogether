@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import "../Styles/TitleBar.css"
 
 function TitleBar({ title, backButton = true, goto }) {
     const navi = useNavigate();
@@ -7,10 +8,7 @@ function TitleBar({ title, backButton = true, goto }) {
     return (
         <div style={{display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "flex-start"}}>
             {backButton && ( // backButton이 true일 때만 렌더링
-                <button
-                    style={{ backgroundColor: "transparent", border: "none", outline: "none", flex: 1, margin: 0 }}
-                    onClick={() => navi(goto)}
-                >
+                <button className='back_button' onClick={() => navi(goto)}>
                     &lt;
                 </button>
             )}

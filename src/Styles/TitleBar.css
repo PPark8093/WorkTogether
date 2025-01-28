@@ -1,0 +1,11 @@
+.back_button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    flex: 1;
+    margin: 0
+}
+
+.back_button:hover {
+    scale: 1.2;
+}
