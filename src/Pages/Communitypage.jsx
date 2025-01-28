@@ -13,7 +13,7 @@ function Communitypage() {
     }, []);
 
     const get_posts = () => {
-        axios.get("https://worktogetherserver.vercel.app/posts").then((res) => {setPosts(res.data); window.location.reload()}).catch((error) => console.error("Error", error));
+        axios.get("https://worktogetherserver.vercel.app/posts").then((res) => {setPosts(res.data);}).catch((error) => console.error("Error", error));
     }
 
     const submit_post = () => {
