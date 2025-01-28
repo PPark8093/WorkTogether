@@ -32,8 +32,8 @@ function Communitypage() {
         <div style={{paddingBottom: "4rem"}}>
             <TitleBar title={"게시판"} goto={"/"}/>
             <div className='add_container'>
-                <input placeholder='title' value={title} onChange={(event) => setTitle(event.target.value)} required/>
-                <input placeholder='body' value={body} onChange={(event) => setBody(event.target.value)} required/>
+                <input placeholder='제목' value={title} onChange={(event) => setTitle(event.target.value)} required/>
+                <input placeholder='내용' value={body} onChange={(event) => setBody(event.target.value)} required/>
                 <button onClick={submit_post}>추가하기</button>
             </div>
             
