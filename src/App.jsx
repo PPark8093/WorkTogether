@@ -2,8 +2,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Homepage from './Pages/Homepage.jsx'
 import Communitypage from './Pages/Communitypage.jsx'
 import './App.css'
-import Homepage from './Pages/Homepage.jsx'
-import Communitypage from './Pages/Communitypage.jsx'
 import './Styles/AllComponents.css'
 
 function App() {
