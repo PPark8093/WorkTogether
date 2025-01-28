@@ -30,7 +30,7 @@ function Communitypage() {
 
     return (
         <div style={{paddingBottom: "4rem"}}>
-            <TitleBar title={"게시판"}/>
+            <TitleBar title={"게시판"} goto={"/"}/>
             <div className='add_container'>
                 <input placeholder='title' value={title} onChange={(event) => setTitle(event.target.value)} required/>
                 <input placeholder='body' value={body} onChange={(event) => setBody(event.target.value)} required/>
@@ -39,12 +39,21 @@ function Communitypage() {
             
             {Array.isArray(posts) && posts.length > 0 ? <div className='post_list_container'>
                 {posts.map((post, index) => (
-                    <div key={post.id || index} className='post'>
-                        <h2>{post.title}</h2>
-                        <p>{post.body}</p>
+                    <div key={post.id || index} className='post_container'>
+                        <div style={{display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column"}}>
+                            <button className='heart_button'>좋</button>
+                            <p>0</p>
+                        </div>
+                        <div style={{marginLeft: "1rem"}}>
+                            <h2>{post.title}</h2>
+                            <p>{post.body}</p>
+                        </div>
                     </div>
                 ))}
             </div> : <div className='no_posts_container'><h1>현재 게시글이 없습니다!</h1></div>}
+
+            <br />
+            <a>(좋아요 기능 아직 덜만듬)</a>
         </div>
         
     )

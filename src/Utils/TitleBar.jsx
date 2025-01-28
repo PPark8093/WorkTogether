@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
-function TitleBar({ title, backButton = true}) {
+function TitleBar({ title, backButton = true, goto }) {
     const navi = useNavigate();
 
     return (
@@ -9,7 +9,7 @@ function TitleBar({ title, backButton = true}) {
             {backButton && ( // backButton이 true일 때만 렌더링
                 <button
                     style={{ backgroundColor: "transparent", border: "none", outline: "none", flex: 1, margin: 0 }}
-                    onClick={() => navi(-1)}
+                    onClick={() => navi(goto)}
                 >
                     &lt;
                 </button>
