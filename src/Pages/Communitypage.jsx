@@ -29,7 +29,7 @@ function Communitypage() {
     };
 
     return (
-        <div>
+        <div style={{paddingBottom: "4rem"}}>
             <TitleBar title={"게시판"}/>
             <div className='add_container'>
                 <input placeholder='title' value={title} onChange={(event) => setTitle(event.target.value)} required/>
