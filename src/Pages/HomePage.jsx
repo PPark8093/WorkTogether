@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import "../Styles/HomePage.css"
 import TitleBar from '../Utils/TitleBar';
 
-function HomePage() {
+function Homepage() {
   const navi = useNavigate();
 
   return (
@@ -14,4 +14,4 @@ function HomePage() {
   )
 }
 
-export default HomePage
+export default Homepage

@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Homepage from './Pages/Homepage.jsx'
+import Communitypage from './Pages/Communitypage.jsx'
 import './App.css'
-import HomePage from './Pages/HomePage.jsx'
-import CommunityPage from './Pages/Communitypage.jsx'
 import './Styles/AllComponents.css'
 
 function App() {
@@ -9,8 +9,8 @@ function App() {
     <BrowserRouter>
       <div style={{margin: "0 4rem"}}>
         <Routes>
-          <Route path='/' element={<HomePage/>}/>
-          <Route path='/community' element={<CommunityPage/>}/>
+          <Route path='/' element={<Homepage/>}/>
+          <Route path='/community' element={<Communitypage/>}/>
         </Routes>
       </div>
     </BrowserRouter>

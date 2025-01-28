@@ -3,7 +3,7 @@ import "../Styles/CommunityPage.css"
 import TitleBar from '../Utils/TitleBar'
 import axios from 'axios';
 
-function CommunityPage() {
+function Communitypage() {
     const [posts, setPosts] = useState([]);
     const [title, setTitle] = useState("");
     const [body, setBody] = useState("");
@@ -50,4 +50,4 @@ function CommunityPage() {
     )
 }
 
-export default CommunityPage
+export default Communitypage
