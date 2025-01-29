@@ -64,9 +64,6 @@ function Communitypage() {
                     </div>
                 ))}
             </div>) : <div className='no_posts_container'><h1>현재 게시글이 없습니다!</h1></div>}
-
-            <br />
-            <a>(좋아요 기능 아직 덜만듬)</a>
         </div>
         
     )
