@@ -10,6 +10,7 @@ function Homepage() {
     <div>
       <TitleBar title={"Work Together"} backButton={false}/>
       <button onClick={() => {navi("/community")}}>게시판</button>
+      <button onClick={() => {navi("/chat")}}>채팅</button>
     </div>
   )
 }
