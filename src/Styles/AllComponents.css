@@ -25,3 +25,12 @@ input {
 input::placeholder {
     color: rgb(200, 200, 200);
 }
+
+textarea {
+    background-color: rgb(33, 33, 33);
+    border: none;
+    padding: 1rem 1rem 33rem 1rem;
+    border-radius: 1rem;
+    font-size: large;
+    resize: none;
+}
