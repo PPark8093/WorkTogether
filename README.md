@@ -1,3 +1,3 @@
-###WorkTogether
+# WorkTogether
 
 https://worktogether.vercel.app/
